@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding: 0 2rem;
+}
+
+table, td, th {
+  border-bottom: 1px solid #c4c4c4;
+  text-align: left;
+}
+
+table {
+  margin-top: 5rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table .name {
+  color: black;
+  font-weight: bold;
+}
+
+th {
+  font-size: 1.4rem;
+  color: #4f5966;
+  padding-block: 1rem;
+  padding-left: 0.7rem;
+}
+
+td {
+  font-size: 0.9rem;
+  color: gray;
+  padding-block: 1rem;
+  padding-left: 0.7rem;
+}
+
+.success {
+  color: #24a167;
+}
+
+.success svg {
+  display: inline-block;
+  margin-bottom: -0.2rem;
+}
+
+.danger {
+  color: #F32013;
+}
+
+.danger svg {
+  display: inline-block;
+  margin-bottom: -0.2rem;
+}
+
+.autocomplete {
+  margin-top: 4rem;
+  margin-inline: auto;
+}
+/*# sourceMappingURL=index.css.map */
