@@ -7,7 +7,7 @@
 html {
   font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
   // font-size: 10px;  /* 1rem = 10px */
-  min-height: 100vh;
+  min-height: 140vh;
 }
 
 .container {
@@ -17,14 +17,23 @@ html {
   padding: 0 2rem;
 }
 
+.logo {
+  display: block;
+  margin-inline: auto;
+}
+
 table, td, th {
   border-bottom: 1px solid rgb(196, 196, 196);
   text-align: left;
 }
 
+.center {
+  margin-top: 1rem;
+  text-align: center;
+}
 
 table {
-  margin-top: 5rem;
+  margin-top: 2rem;
   width: 100%;
   border-collapse: collapse;
   
@@ -46,8 +55,15 @@ td {
   color: gray;
   padding-block: 1rem;
   padding-left: 0.7rem;
-  // display: flex;
-  // align-items: center;
+  cursor: pointer;
+}
+
+.trash {
+  transition: 0.3s ease;
+
+  &:hover {
+    color: #ed3419;
+  }
 }
 
 .success {
@@ -59,7 +75,7 @@ td {
 }
 
 .danger {
-  color: #F32013;
+  color: #ed3419;
   svg {
     display: inline-block;
     margin-bottom: -0.2rem;
@@ -67,7 +83,99 @@ td {
 }
 
 .autocomplete {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-inline: auto;
-  
+}
+
+.chart {
+  max-width: 800px;
+  margin-top: 50px;
+  margin-inline: auto;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 2rem;
+
+  .btns {
+    margin-left: 0.8rem;
+    margin-top: 1.5rem;
+
+    button {
+      padding-inline: 0.75rem;
+      padding-block: 0.25rem;
+      background-color: transparent;
+      margin-right: 0.5rem;
+      border: 1px solid gray;
+      border-radius: 0.2rem;
+      transition: 0.3s ease;
+
+      &:hover {
+        border-color: rgb(45, 137, 241);
+        cursor: pointer;
+      }
+
+      &.active {
+        background-color: #5b76ee;
+        border-color: #5b76ee;
+        color: white
+      }
+    }
+  }
+}
+
+
+.data {
+  border: 1px solid lightgray;
+  padding: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 800px;
+  margin-inline: auto;
+  font-size: 0.8rem;
+
+  section {
+    p {
+      font-weight: bold; 
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+      
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+nav {
+  min-height: 60px;
+  background-color: #eff2fd;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  ul {
+    list-style-type: none;
+
+    a {
+      padding-left: 2rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.error {
+  margin-top: 10rem;
+
+  h1 {
+    margin-inline: auto;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    max-width: 27ch;
+  }
 }

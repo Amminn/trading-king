@@ -7,7 +7,7 @@
 
 html {
   font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
-  min-height: 100vh;
+  min-height: 140vh;
 }
 
 .container {
@@ -17,13 +17,23 @@ html {
   padding: 0 2rem;
 }
 
+.logo {
+  display: block;
+  margin-inline: auto;
+}
+
 table, td, th {
   border-bottom: 1px solid #c4c4c4;
   text-align: left;
 }
 
+.center {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 table {
-  margin-top: 5rem;
+  margin-top: 2rem;
   width: 100%;
   border-collapse: collapse;
 }
@@ -45,6 +55,16 @@ td {
   color: gray;
   padding-block: 1rem;
   padding-left: 0.7rem;
+  cursor: pointer;
+}
+
+.trash {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.trash:hover {
+  color: #ed3419;
 }
 
 .success {
@@ -57,7 +77,7 @@ td {
 }
 
 .danger {
-  color: #F32013;
+  color: #ed3419;
 }
 
 .danger svg {
@@ -66,7 +86,107 @@ td {
 }
 
 .autocomplete {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-inline: auto;
+}
+
+.chart {
+  max-width: 800px;
+  margin-top: 50px;
+  margin-inline: auto;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 2rem;
+}
+
+.chart .btns {
+  margin-left: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.chart .btns button {
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+  background-color: transparent;
+  margin-right: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.chart .btns button:hover {
+  border-color: #2d89f1;
+  cursor: pointer;
+}
+
+.chart .btns button.active {
+  background-color: #5b76ee;
+  border-color: #5b76ee;
+  color: white;
+}
+
+.data {
+  border: 1px solid lightgray;
+  padding: 2rem;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  max-width: 800px;
+  margin-inline: auto;
+  font-size: 0.8rem;
+}
+
+.data section p {
+  font-weight: bold;
+}
+
+.data section p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.data section p span {
+  font-weight: 400;
+}
+
+nav {
+  min-height: 60px;
+  background-color: #eff2fd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul a {
+  padding-left: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.error {
+  margin-top: 10rem;
+}
+
+.error h1 {
+  margin-inline: auto;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  max-width: 27ch;
 }
 /*# sourceMappingURL=index.css.map */
